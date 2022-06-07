@@ -13,6 +13,6 @@ Dentro da classe estão os atributos:
 - **posProxima**, o índice do próximo pacote.
 
 ## Fluxo
-- O cliente envia um pacote. 
-- O servidor recebe esse pacote e compara seu índice com o índice esperado, se corresponder, ele envia um pacote de confirmação indicando o índice do próximo pacote esperado, se não, ele envia um pacote indicando o índice do pacote que foi recebido. 
-- O cliente recebe o pacote do servidor, se seu índice indicar o do próximo pacote a ser enviado, significa que o servidor recebeu o pacote que o cliente enviou e está esperando o próximo, se o pacote indicar o índice do que o cliente enviou, o servidor não recebeu o pacote, então o cliente envia novamente.
+- [O cliente envia um pacote](https://github.com/owlmilo1/ProtocoloComunicaDados/blob/main/src/implementaprotocolo/Cliente.java#L34). 
+- O servidor recebe esse pacote e [compara seu índice com o índice esperado](https://github.com/owlmilo1/ProtocoloComunicaDados/blob/main/src/implementaprotocolo/Servidor.java#L26), [se corresponder, ele envia um pacote de confirmação indicando o índice do próximo pacote esperado](https://github.com/owlmilo1/ProtocoloComunicaDados/blob/main/src/implementaprotocolo/Servidor.java#L29), [se não, ele envia um pacote indicando o índice do pacote que foi recebido.](https://github.com/owlmilo1/ProtocoloComunicaDados/blob/main/src/implementaprotocolo/Servidor.java#L34) 
+- O cliente recebe o pacote do servidor, [se seu índice indicar o do próximo pacote a ser enviado](https://github.com/owlmilo1/ProtocoloComunicaDados/blob/main/src/implementaprotocolo/Cliente.java#L41), significa que o servidor recebeu o pacote que o cliente enviou e está esperando o próximo, [se o pacote indicar o índice do que o cliente enviou](https://github.com/owlmilo1/ProtocoloComunicaDados/blob/main/src/implementaprotocolo/Cliente.java#L44), o servidor não recebeu o pacote, então o cliente envia novamente.
