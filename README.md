@@ -5,7 +5,7 @@
 Dentro do pacote haverá o identificador do pacote atual, a quantidade total de caracteres, e o identificador do próximo pacote. O reconhecimento do pacote, pelo cliente, será realizado com um pacote indicando o identificador do próximo pacote. Não recebendo este pacote de reconhecimento, o cliente envia o pacote outra vez.
 
 ## Classe de Pacote e seus Atributos
-Os objetos da classe Mensagem representam os Pacotes que serão enviados.
+Os objetos da classe [Mensagem](https://github.com/owlmilo1/ProtocoloComunicaDados/blob/main/src/implementaprotocolo/Mensagem.java) representam os Pacotes que serão enviados.
 Dentro da classe estão os atributos: 
 - **mensagem**, que representa o conteúdo do pacote; 
 - **tamMensagem**, que representa o tamanho da mensagem; 
